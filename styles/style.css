@@ -1,0 +1,233 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap');
+
+:root{
+    --fonte-principal: 'Inter', sans-serif;
+
+    --cor-principal: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #99b9f9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;  
+    padding: 0;
+}
+
+.pesquisa{
+    display: flex;
+    align-items: center;
+    margin-left: 26.4vh;
+    margin-top: 6vh;
+    gap: 3vh;
+}
+
+.pesquisa__barra{
+    width: 97vh;
+    height: 6vh;
+    font-size: 4.7vh;
+    color: var(--cor-principal);
+    border: 3px solid white;
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.pesquisa__barra:focus{
+    outline-color: white;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.lupa:hover{
+    width: 6vh;
+}
+
+::placeholder {
+    color: var(--cor-principal); 
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    opacity: 1;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vh;
+    margin-top: 13vh;
+    font-size: 2.5vh;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+    margin-bottom: 0.1vh;
+}
+
+.infos__dia{
+    font-weight: 500;
+}
+
+.temp__atual{
+    font-size: 23vh;
+    font-weight: 800;
+}
+
+.max__min{
+    font-size: 3.4vh;
+    margin-left: 3.8vh;
+    font-weight: 600;
+}
+
+.infos__temp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descricao__temp{
+    font-size: 5vh;
+    font-weight: 600;   
+}
+
+
+.barra__lateral{
+    width: 25vh; 
+    position: fixed;
+    top: 0; 
+    right: 0; 
+    height: 100%; 
+    min-height: 100vh;
+    overflow-y: hidden;
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+    overflow-x: hidden;
+}
+
+h4{
+    font-weight: 200;
+}
+
+.barra__lateral__titulo{
+    height: 12.5%;
+    font-size: 3.5vh;
+    background: rgb(22,63,144);
+    background: linear-gradient(180deg, rgba(22, 63, 144, 1), rgba(68, 82, 206, 0.96),rgba(100, 87, 248, 1));
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+strong{
+    font-weight: 600;
+}
+
+.barra__lateral__dias{
+    height: 12.5%;
+    background: rgb(22,63,144);
+    background: linear-gradient(180deg, rgba(22, 63, 144, 1), rgba(68, 82, 206, 0.96),rgba(100, 87, 248, 1));
+    font-weight: 500;
+}
+
+.barra__lateral__dias:hover{
+    background: #092b6e; /* Define a cor de fundo desejada */
+    background-image: none; /* Remove o gradiente linear */
+}
+
+.barra__lateral__dias__dia{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.barra__lateral__dias__dia__semana{
+    font-size: 3vh;
+    font-weight: 800;
+}
+
+.barra__lateral_dia_mes{
+    font-size: 1.5vh;
+    font-weight: 400;
+}
+
+.barra__lateral__dias__maxmin{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 2.5vh;
+    margin-right: 2.5vh;
+}
+
+.barra__lateral__dias_img{
+    margin-top: -8vh;
+    margin-left: 2vh;
+}
+
+
+.horas-diarias1{
+    margin-left: 2px;
+    margin-top: 100px;
+    display: flex;
+    width: 800px; /* Largura do contêiner do carrossel para mostrar 6 elementos de uma vez */
+    overflow: hidden;
+    
+}
+
+.horas{
+    display: flex;
+    flex-direction: column;
+    width: 100px; /* Largura de cada elemento do carrossel */
+    flex: 0 0 auto;
+    gap: 3vh;
+    
+}
+
+.horass{
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.temp, .hor{
+    font-size: 3vh;
+    color: var(--cor-principal);
+}
+.temp-hora{
+    margin-left: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.imag{
+    margin: 5vh, 0, 5vh, 0;
+    width: 8vh;
+}
+
+#nextBtn, #prevBtn {
+    display: flex;
+    width: 7vh;
+    height: 6vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    font-size: 5vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    margin-top: -1vh;
+    cursor: pointer;
+    margin-top: 10vh;
+    border: none;
+    color: var(--cor-principal);
+}
+
+.hor , .temp {
+    font-family: var(--fonte-principal);
+    font-size: 2.3vh;
+}

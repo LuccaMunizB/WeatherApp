@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <script src="carrosel.js" defer></script>
+</head>
+<header></header>
+<body class="body">
+    <div class="barra__lateral">
+        <div class="barra__lateral__titulo">
+            <h4>Dias da <br><strong>semana</strong></h4>
+        </div>
+
+        
+        <div class="barra__lateral__dias" id="dia01" onclick="mostrarDetalhes(dia01)">
+            <div class="barra__lateral__dias__dia">
+                <p class="barra__lateral__dias__dia__semana dia1">Qua</p>
+                <p class="barra__lateral_dia_mes mes1">13 set</p>
+            </div>
+
+            <div class="barra__lateral__dias__maxmin">
+                <p class="max__dia1"28°</p>
+                <p class="min__dia1">15°</p>
+            </div>
+
+            <div class="barra__lateral__dias_img">
+                <img class="diaimg1" src="./Img/small_sun.png" alt="">
+            </div>
+        </div>
+
+        <div class="barra__lateral__dias" id="dia02" onclick="mostrarDetalhes(dia02)">
+            <div class="barra__lateral__dias__dia">
+                <p class="barra__lateral__dias__dia__semana dia2">Qua</p>
+                <p class="barra__lateral_dia_mes mes2">13 set</p>
+            </div>
+
+            <div class="barra__lateral__dias__maxmin">
+                <p class="max__dia2">28°</p>
+                <p class="min__dia2">15°</p>
+            </div>  
+
+            <div class="barra__lateral__dias_img">
+                <img class="diaimg2" src="./Img/small_sun.png" alt="">
+            </div>
+        </div>  
+
+        <div class="barra__lateral__dias" id="dia03" onclick="mostrarDetalhes(dia03)">
+            <div class="barra__lateral__dias__dia">
+                <p class="barra__lateral__dias__dia__semana dia3">Qua</p>
+                <p class="barra__lateral_dia_mes mes3">13 set</p>
+            </div>
+
+            <div class="barra__lateral__dias__maxmin">
+                <p class="max__dia3">28°</p>
+                <p class="min__dia3">15°</p>
+            </div>
+
+            <div class="barra__lateral__dias_img">
+                <img class="diaimg3" src="./Img/small_sun.png" alt="">
+            </div>
+        </div>
+
+        <div class="barra__lateral__dias" id="dia04" onclick="mostrarDetalhes(dia04)">
+            <div class="barra__lateral__dias__dia">
+                <p class="barra__lateral__dias__dia__semana dia4">Qua</p>
+                <p class="barra__lateral_dia_mes mes4">13 set</p>
+            </div>
+
+            <div class="barra__lateral__dias__maxmin">
+                <p class="max__dia4">28°</p>
+                <p class="min__dia4">15°</p>
+            </div>
+
+            <div class="barra__lateral__dias_img">
+                <img class="diaimg4" src="./Img/small_sun.png" alt="">
+            </div>
+        </div>
+
+        <div class="barra__lateral__dias" id="dia05" onclick="mostrarDetalhes(dia05)">
+            <div class="barra__lateral__dias__dia">
+                <p class="barra__lateral__dias__dia__semana dia5">Qua</p>
+                <p class="barra__lateral_dia_mes mes5">13 set</p>
+            </div>
+
+            <div class="barra__lateral__dias__maxmin">
+                <p class="max__dia5">28°</p>
+                <p class="min__dia5">15°</p>
+            </div>
+
+            <div class="barra__lateral__dias_img">
+                <img class="diaimg5" src="./Img/small_sun.png" alt="">
+            </div>
+        </div>
+
+        <div class="barra__lateral__dias" id="dia06" onclick="mostrarDetalhes(dia06)">
+            <div class="barra__lateral__dias__dia">
+                <p class="barra__lateral__dias__dia__semana dia6">Qua</p>
+                <p class="barra__lateral_dia_mes mes6">13 set</p>
+            </div>
+
+            <div class="barra__lateral__dias__maxmin">
+                <p class="max__dia6">28°</p>
+                <p class="min__dia6">15°</p>
+            </div>
+
+            <div class="barra__lateral__dias_img">
+                <img class="diaimg6" src="./Img/small_sun.png" alt="">
+            </div>
+        </div>
+
+        <div class="barra__lateral__dias" id="dia07" onclick="mostrarDetalhes(dia07)">
+            <div class="barra__lateral__dias__dia">
+                <p class="barra__lateral__dias__dia__semana dia7">Qua</p>
+                <p class="barra__lateral_dia_mes mes7">13 set</p>
+            </div>
+
+            <div class="barra__lateral__dias__maxmin">
+                <p class="max__dia7">28°</p>
+                <p class="min__dia7">15°</p>
+            </div>
+
+            <div class="barra__lateral__dias_img">
+                <img class="diaimg7" src="./Img/small_sun.png" alt="">
+            </div>  
+        </div>
+    </div>
+    
+
+    <div class="pesquisa">
+        <input type="text" placeholder="Porto Alegre, RS, Brasil" class="pesquisa__barra">
+        <img src="./Img/lupa (1).png" class="lupa" onclick="mySearch()">
+    </div>
+
+    <div class="infos">
+        <div class="infos__dia">
+            <p class="diaSemana"></p>
+            <p class="dataAtual"></p>
+        </div>
+        <div class="infos__temp">
+            <h1 class="temp__atual">23°</h1>
+            <div class="max__min">
+                <h3 class="max">32° MÁX</h3>
+                <h3 class="min"> 12° MIN</h3>
+            </div>    
+        </div>
+        <p class="descricao__temp">Ensolarado</p>
+    </div>
+    
+    <section class="temp-hora">
+        <button id="prevBtn"><</button>
+        <div class="horas-diarias1"></div>
+        <button id="nextBtn">></button>
+    </section>
+    <script src="index.js"></script>
+    <script src="Search.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
